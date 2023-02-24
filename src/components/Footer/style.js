@@ -4,19 +4,28 @@ import { ReactComponent as phone } from "../../assets/icons/phone.svg";
 import { ReactComponent as cardHouse } from "../../assets/icons/cardHouse.svg";
 import { ReactComponent as cardMaps } from "../../assets/icons/cardMaps.svg";
 
-const Container = styled.div`
-  height: 417px;
+
+const Wrapper = styled.div`
   background: #0d263b;
+  margin-bottom:0px;
+`;
+const Container = styled.div`
+  height:417px;
+ 
 
   display: flex;
-  position: relative;
-  /* align-items: center; */
+  
   justify-content: space-around;
 
-  margin: auto;
+ 
   width: 100%;
-  margin-top: 96px;
+  margin-top: 66px;
   padding: 48px 0;
+ @media screen and (max-width: 800px) {
+    flex-direction:column;
+    height:820px;
+    padding:50px;
+   margin-top: 46px;
 `;
 
 const Content = styled.div`
@@ -76,4 +85,4 @@ Icon.Maps = styled(cardMaps)`
   }
 `;
 
-export { Container, Content, Icon };
+export {Wrapper, Container, Content, Icon };

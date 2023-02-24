@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+ 
 `;
 const Main = styled.div`
   display: flex;
@@ -22,15 +24,40 @@ const Wrapper = styled.div`
   height: 65px;
   font-size: 16px;
 `;
+const mobileHidden = ({ hidden }) => {
+  if (hidden) {
+    return {
+      display: "none",
+    };
+  }
+};
+const mobileNavbar = ({ mobile }) => {
+  if (mobile) {
+    return {
+      display: "flex",
+      "align-items": "center",
+      "flex-direction":"column",
+      "justify-content":"center"
+    };
+  }else{
+    return{
+       display: "flex",
+  
+  "align-items": "center",
+    }
+  }
+};
 
 const Section = styled.div`
-  display: flex;
-  align-items: center;
+  ${mobileNavbar}
   cursor: ${({ logo }) => logo && "pointer"};
   .active {
     color: red;
   }
+  @media screen and (max-width: 800px) {
+    ${mobileHidden}
 `;
+
 const Link = styled(NavLink)`
   text-decoration: none;
   padding: 32px;
@@ -42,4 +69,9 @@ const Logo = styled.h1`
   color:red;
   }
 `;
-export { Container, Main, Wrapper, Section, Link, Logo};
+const Mobile = styled.div`
+display:none;
+@media screen and (max-width: 800px) {
+    display:block;
+`;
+export { Container, Main, Wrapper, Section, Link, Logo, Mobile };

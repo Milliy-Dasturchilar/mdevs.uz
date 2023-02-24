@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Ser
- = () => {
-  return (
-    <div>Ser
-    </div>
-  )
-}
+const Ser = () => {
+  return <div>Servise</div>;
+};
 
-export default Ser
+export default Ser;

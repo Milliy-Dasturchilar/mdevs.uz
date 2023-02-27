@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Main, Section, Wrapper, Link, Logo, Mobile } from "./style";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
 import Footer from "../Footer";
 import { Button, Drawer } from "antd";
@@ -52,7 +52,7 @@ const Navbar = () => {
                   return (
                     !hidden && (
                       <Link
-                        onClick={()=>setOpen(false)}
+                        onClick={() => setOpen(false)}
                         className={({ isActive }) => isActive && "active"}
                         key={index}
                         to={path}
@@ -69,7 +69,6 @@ const Navbar = () => {
       </Main>
       <Outlet />
       <Footer />
-      
     </Container>
   );
 };

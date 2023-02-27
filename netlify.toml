@@ -1,5 +1,5 @@
 [build]
-  command="nmp run build"
+  command="npm run build"
   publish="/build"
   base="/"
 [[redirects]]

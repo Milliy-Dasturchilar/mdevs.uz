@@ -69,6 +69,7 @@ const Navbar = () => {
       </Main>
       <Outlet />
       <Footer />
+      
     </Container>
   );
 };

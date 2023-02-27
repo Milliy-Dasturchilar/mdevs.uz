@@ -16,6 +16,50 @@ body {
   --background: #0061df;
   --padding: 0 30px;
 }
+.logo{
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #0d263b;
+  margin: 70px;
+  text-shadow: 3px 10px 12px rgba(0,0,0,0.76);
+}
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #0d263b;
+  width: 400px;
+}
+.subTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #0d263b;
+}
+.info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  /* Text / Color */
+
+  color: #696969;
+}
 
 /* navbar */
 .drawer{

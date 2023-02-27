@@ -1,8 +1,10 @@
 import React from 'react'
-
+import SectionFirst from '../SectionFist'
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <SectionFirst/>
+    </>
   )
 }
 

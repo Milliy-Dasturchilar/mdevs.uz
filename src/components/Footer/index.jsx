@@ -50,6 +50,7 @@ export const Footer = () => {
         &copy; {new Date().getFullYear()}
         <span> Mdevs </span>
       </div>
+      hellollll
     </Wrapper>
   );
 };

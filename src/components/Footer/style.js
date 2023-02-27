@@ -7,10 +7,10 @@ import { ReactComponent as cardMaps } from "../../assets/icons/cardMaps.svg";
 
 const Wrapper = styled.div`
   background: #0d263b;
-  margin-bottom:0px;
+ 
 `;
 const Container = styled.div`
-  height:417px;
+  // height:350px;
  
 
   display: flex;
@@ -26,7 +26,7 @@ const Container = styled.div`
     height:820px;
     padding:50px;
    margin-top: 46px;
-`;
+`;  
 
 const Content = styled.div`
   display: flex;

@@ -7,7 +7,7 @@ import { ReactComponent as cardMaps } from "../../assets/icons/cardMaps.svg";
 
 const Wrapper = styled.div`
   background: #0d263b;
- 
+  margin-top:200px;
 `;
 const Container = styled.div`
   // height:350px;

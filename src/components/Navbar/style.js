@@ -56,6 +56,7 @@ const Section = styled.div`
   }
   @media screen and (max-width: 800px) {
     ${mobileHidden}
+  }
 `;
 
 const Link = styled(NavLink)`
@@ -72,6 +73,6 @@ const Logo = styled.h1`
 const Mobile = styled.div`
 display:none;
 @media screen and (max-width: 800px) {
-    display:block;
+    display:block;}
 `;
 export { Container, Main, Wrapper, Section, Link, Logo, Mobile };

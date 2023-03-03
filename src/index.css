@@ -29,15 +29,15 @@ body {
   text-shadow: 3px 10px 12px rgba(0,0,0,0.76);
 }
 .title {
-  font-family: "Montserrat";
+   font-family: "Montserrat";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 28px;
   line-height: 36px;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #0d263b;
-  width: 400px;
+  
+ 
 }
 .subTitle {
   font-family: "Montserrat";

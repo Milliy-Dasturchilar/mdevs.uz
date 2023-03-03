@@ -23,9 +23,16 @@ const Content = styled.div`
 
 `;
 const Logo = styled.h1`
- margin-bottom:100px;
- 
-`
+  margin-bottom: 100px;
+  @media screen and (max-width: 800px) {
+    margin-top:20px;
+  }
+`;
+const Title = styled.h3`
+  width: 400px;
+  margin-bottom: 30px;
+  color: #0d263b;
+`;
 const Img = styled.img`
   width: 700px;
   height: 400px;
@@ -34,9 +41,9 @@ const Img = styled.img`
   -webkit-box-shadow: 13px 23px 48px 3px rgba(34, 107, 155, 0.53);
   -moz-box-shadow: 13px 23px 48px 3px rgba(34, 107, 155, 0.53);
   @media screen and (max-width: 800px) {
-    width: 400px;
+    width: 370px;
     height: 250px;
     margin-top:50px;
   }
 `;
-export { Container, Main, Content, Logo, Img };
+export { Container, Main, Content, Logo,Title, Img };

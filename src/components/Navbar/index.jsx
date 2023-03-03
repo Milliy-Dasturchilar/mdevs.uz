@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Container, Main, Section, Wrapper, Link, Logo, Mobile } from "./style";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
 import Footer from "../Footer";
 import { Button, Drawer } from "antd";
 import { FaBars } from "react-icons/fa";
 const Navbar = () => {
+  const navigate= useNavigate();
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
       <Main>
         <Wrapper>
           <Section>
-            <Logo>MDevs</Logo>
+            <Logo onClick={()=>navigate("/home")}>MDevs</Logo>
           </Section>
           <Section hidden>
             {navbar.map(({ title, path, hidden }, index) => {

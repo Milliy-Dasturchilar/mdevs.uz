@@ -68,6 +68,7 @@ const Logo = styled.h1`
   width: 30px;
   margin-right: 12px;
   color:red;
+   cursor: pointer;
   }
 `;
 const Mobile = styled.div`

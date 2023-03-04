@@ -7,7 +7,7 @@ import { ReactComponent as cardMaps } from "../../assets/icons/cardMaps.svg";
 
 const Wrapper = styled.div`
   background: #0d263b;
-  margin-top:200px;
+  // margin-top:200px;
 `;
 const Container = styled.div`
   // height:350px;
@@ -23,7 +23,7 @@ const Container = styled.div`
   padding: 48px 0;
  @media screen and (max-width: 800px) {
     flex-direction:column;
-    height:820px;
+    height:860px;
     padding:50px;
    margin-top: 46px;
 `;  
